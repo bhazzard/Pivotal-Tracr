@@ -1,0 +1,31 @@
+{
+	"name": "Pivotal Tracr",
+	"version": "1.0.2",
+	"icons": {
+		"16": "images/16.png",
+		"48": "images/48.png",
+		"128": "images/128.png"
+	},
+	"description": "links stories to trac tickets",
+	"permissions": [
+		"https://*.pivotaltracker.com/",
+		"http://**.pivotaltracker.com/"
+	],
+	"background_page": "background.html",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://*.pivotaltracker.com/projects/*",
+				"http://*.pivotaltracker.com/projects/*"
+			],
+			"css": ["logo.css"],
+			"js": [
+				"lib/jquery-1.5.2.min.js",
+				"traclinks.js",
+				"addToTrac.js",
+				"optionsLink.js"
+			]
+		}
+	],
+	"options_page": "options.html"
+}

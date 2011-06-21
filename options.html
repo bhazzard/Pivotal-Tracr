@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<script type="text/javascript" src="lib/jquery-1.5.2.min.js"></script>
+		<script type="text/javascript" src="lib/urlParam.js"></script>
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="options.css" />
+	</head>
+	<body>
+		<div id="header">
+			<h1 class="logo">Pivotal TRACr</h1>
+		</div>
+	
+		<div id="options">
+			<h2>OPTIONS</h2>
+			<div class="option">
+				Trac Url: <input type="text" name="tracUrl" id="option_tracUrl" class="option_edit" />
+			</div>
+			<a id="options_save" href="#">Save</a>
+		</div>
+		
+		<script type="text/javascript">
+			var tab = $.urlParam("tab");
+			
+			$(".option_edit").each(function() {
+				var optionName = $(this).attr("name");
+				var optionValue = localStorage.getItem(optionName);
+				$(this).val(optionValue)
+			});
+			
+			$("#options_save").click(function() {
+				$(".option_edit").each(function() {
+					var optionName = $(this).attr("name");
+					var optionValue = $(this).val();
+					localStorage.setItem(optionName, optionValue);
+				});
+				
+				if (tab) {
+					chrome.tabs.sendRequest(Number(tab), {action: "optionsSet"});
+				}
+				window.close();
+				return false;
+			});
+		</script>
+	</body>
+</html>

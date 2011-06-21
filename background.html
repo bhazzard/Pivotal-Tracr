@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script type="text/javascript" src="lib/jquery-1.5.2.min.js"></script>
+		<script type="text/javascript">
+			chrome.extension.onRequest.addListener(function(request, sender, callback) {
+				if (request.action == "getOptions")
+				{
+					var options = {};
+					for (var i = 0; i < localStorage.length; i++) {
+						options[localStorage.key(i)] = localStorage.getItem(localStorage.key(i));
+					}
+					callback(options);
+				}
+				if (request.action == "openOptionsPage")
+				{
+					window.open("options.html?tab=" + sender.tab.id);
+				}
+			});
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

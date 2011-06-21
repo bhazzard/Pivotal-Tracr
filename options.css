@@ -1,0 +1,56 @@
+#header {
+	background-color: #256188;
+	padding: 10px 15px;
+}
+
+#header .logo {
+	display: block;
+	width: 260px;
+	height: 25px;
+	text-indent: -9999em;
+	background-image: url(images/pivotal_tracr.png);
+}
+
+#options {
+	margin: 15px;
+	background-color: #FFF8D7;
+	border: 1px solid #999999;
+	border-radius: 5px;
+}
+
+#options h2 {
+	padding: 5px;
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	color: #FFFFE1;
+	background-color: #333333;
+}
+
+#options .option {
+	padding: 15px;
+}
+
+#options .option input {
+	width: 300px;
+}
+
+#options input.option_edit {
+	margin-right: 0px;
+}
+
+#options_save {
+	margin: 0 0 15px 15px;
+}
+
+a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #FFFFE1;
+	width: 75px;
+	padding: 2px 6px 3px;
+	border: 1px outset buttonface;
+	border-radius: 5px;
+	background-color: #333333;
+}
