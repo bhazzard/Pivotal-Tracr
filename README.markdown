@@ -1,7 +1,7 @@
 # Pivotal Tracr
 
 ## What is this?
-It's a Google Chrome Extension to add lightweight [Trac][trac] integration to [Pivotal Tracker][pivotaltracker].
+It's a Google Chrome Extension to add lightweight [Trac](http://trac.edgewall.org/ "A wiki and issue tracking system") integration to [Pivotal Tracker](https://www.pivotaltracker.com/ "An agile planning tool").
 
 ## What does it do?
  * Makes it easy to link from a Pivotal Tracker story to one or more Trac tickets
@@ -9,7 +9,7 @@ It's a Google Chrome Extension to add lightweight [Trac][trac] integration to [P
  * More features to come...
 
 ## How do I install it?
-If you want the latest *stable* version, the best way to install it is through the [Google Chrome Web Store][webstore].
+If you want the latest *stable* version, the best way to install it is through the [Google Chrome Web Store](https://chrome.google.com/webstore/detail/lkcjccbmobgdcljmdgdncmfkcncacdcj?hl=en-US "Pivotal Tracr on Google's Chrome Web Store").
 
 If you want to install the latest development snapshot, follow these instructions:
  1. Download or clone this project
