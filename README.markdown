@@ -23,3 +23,7 @@ If you want to install the latest development snapshot, follow these instruction
  * Send me detailed bug reports
  * Send me feature requests
  * Write some code and send me a pull request
+
+[trac] http://trac.edgewall.org/ "A wiki and issue tracking system"
+[pivotaltracker] https://www.pivotaltracker.com/ "An agile planning tool"
+[webstore] https://chrome.google.com/webstore/detail/lkcjccbmobgdcljmdgdncmfkcncacdcj?hl=en-US "Pivotal Tracr on Google's Chrome Web Store"
