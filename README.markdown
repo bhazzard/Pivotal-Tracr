@@ -1,3 +1,6 @@
+> [!NOTE]  
+> This thing was built years ago, and was cool at the time, but hasn't been maintained in years, and almost certainly no longer works.
+
 # Pivotal Tracr
 
 ## What is this?
